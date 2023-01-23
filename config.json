@@ -1,0 +1,45 @@
+{
+	"sensors": [{
+		"name":"ReedSwitch",
+		"type": "contactor",
+		"port" : "23",
+		"levelOn" : "low",
+		"debounceTimeout" : "50",
+		"simulator" : "0"
+	},
+	{
+		"name": "LED Blink",
+		"type" : "LED_Blink",
+		"port" : "25",
+		"period": "1000",
+		"simulator" : "0"
+	},
+	{
+		"name": "PIR 1",
+		"type" : "PIR",
+		"port" : "16",
+		"timeCalibration": "10000",
+		"timeRestore" : "6000",
+		"simulator" : "0"
+	},
+	{
+		"name" : "T1",
+		"type" : "ds1820",
+		"bus" : "w1",
+		"address" : "28-0516b4211eff",
+		"interval" : "1000",
+		"simulator" : "0"
+	},
+	{
+		"name" : "Emergency Switch",
+		"type" : "relay",
+		"port" : "12",
+		"levelOn" : "high",
+		"simulator" : "0"
+	}	
+	],
+	"logFile" : "/share/0/RPi_Sensors/sensors_log.txt",
+	"wsUrl" : "ws://3.64.54.137:4003/",
+	"apiKey" : "220769CL-Sigma"
+	
+}
